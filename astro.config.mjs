@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 // https://starlight.astro.build/reference/configuration/
 export default defineConfig({
 	site: 'https://danaarnonperry.github.io',
-	base: '/academy',
+	base: '/Academy',
 	integrations: [
 		starlight({
 			title: 'מאגר ידע',

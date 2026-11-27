@@ -11,7 +11,7 @@
 ## פיתוח מקומי
 ```bash
 npm install
-npm run dev      # http://localhost:4321/academy/
+npm run dev      # http://localhost:4321/Academy/
 npm run build    # בונה ל-dist/ כולל אינדקס החיפוש
 ```
 
