@@ -9,6 +9,14 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'מאגר ידע',
+			logo: {
+				light: './src/assets/logo-light.png',
+				dark: './src/assets/logo-dark.png',
+				alt: '2D.point',
+			},
+			social: [
+				{ icon: 'external', label: '2D.point', href: 'https://2dpoint.co.il' },
+			],
 			defaultLocale: 'root',
 			locales: {
 				root: { label: 'עברית', lang: 'he', dir: 'rtl' },
