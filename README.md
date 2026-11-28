@@ -16,4 +16,5 @@ npm run build    # בונה ל-dist/ כולל אינדקס החיפוש
 ```
 
 ## פרסום
-כל מיזוג ל-`main` מפרסם את האתר ב-GitHub Pages דרך `.github/workflows/deploy.yml` ([התיעוד של Astro](https://docs.astro.build/en/guides/deploy/github/)).
+- **Vercel (נעול):** כל מיזוג ל-`main` מפרסם את האתר בפרויקט Vercel, מאחורי Vercel Authentication על כל הפריסות. שם האתר יושב בשורש הדומיין (`base: '/'`), לפי משתנה הסביבה `VERCEL` ([Vercel, System Environment Variables](https://vercel.com/docs/environment-variables/system-environment-variables)).
+- **GitHub Pages (ציבורי):** `.github/workflows/deploy.yml` עדיין מפרסם תחת `/Academy/` ([התיעוד של Astro](https://docs.astro.build/en/guides/deploy/github/)), עד שיוחלט לכבות אותו.
