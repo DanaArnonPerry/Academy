@@ -3,9 +3,13 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // https://starlight.astro.build/reference/configuration/
+// On Vercel (VERCEL=1 at build time) the site is served from the domain root;
+// on GitHub Pages it is a project site under /Academy.
+const onVercel = process.env.VERCEL === '1';
+
 export default defineConfig({
-	site: 'https://danaarnonperry.github.io',
-	base: '/Academy',
+	site: onVercel ? undefined : 'https://danaarnonperry.github.io',
+	base: onVercel ? '/' : '/Academy',
 	integrations: [
 		starlight({
 			title: 'מאגר ידע',
